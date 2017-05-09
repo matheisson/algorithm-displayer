@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8"/>
+    <title>Algorithms</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Let's Bubble Sort!</h1>
+    </div>
+    <div id="body">
+        <div id="unsorted-list">
+            <form id="input-box" action="#">
+                <label>Enter your List here:<br/>
+                <input id="list" type="text" placeholder="Numbers to sort"/>
+                <br/>
+                <input id="sub-button" type="submit" value="Submit"/>
+                </label>
+            </form>
+        </div>
+        <br/>
+        <div id="test" align="center"></div>
+        <br/>
+        <div id="result"></div>
+        <script th:src="@{/main.js}"></script>
+    </div>
+</div>
+<style>
+    body {
+        background-color: #EEEEEE;
+    }
+    #container{
+        background-color: white;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #input-box {
+        position: absolute;
+        padding-bottom: 70%;
+        margin: auto;
+    }
+
+    #result {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+    #header {
+        background-color: #66CCFF;
+        color: white;
+        text-align: center;
+    }
+    .elem {
+        float: left;
+        color: #F44336;
+        border-radius: 50px;
+        padding: 20px;
+        background-color: #c1c1c1;
+        width: 10px;
+        height: 10px;
+        line-height: 13px;
+        margin: 5px;
+        box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, .4);
+        font-weight: 600;
+        font-family: monospace;
+        white-space: pre-line;
+
+    }
+    #list {
+        width: 250px;
+    }
+
+    #test {
+        font-size: 20px;
+    }
+
+</style>
+</body>
+</html>
